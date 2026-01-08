@@ -9,6 +9,12 @@
 <sup>3</sup> EC Joint Research Centre (JRC)
 
 
+<table>
+  <tr>
+    <td><img src="brush2.jpg" width="1024" height="1463"></td>
+  </tr>
+</table>
+
 # Abstract
 Principal Component Analysis (PCA) is a fundamental tool for dimension
 reduction and exploratory analysis of multivariate data, yet standard
