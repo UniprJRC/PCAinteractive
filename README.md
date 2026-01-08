@@ -1,6 +1,6 @@
 
 # Interactive Graphics for PCA in Matlab
-**Marco Riani**<sup>1</sup>*, **Anthony C. Atkinson**<sup>2</sup>, **Aldo Corbellini**<sup>1</sup>* , **Domenico Perrotta**<sup>3</sup>*, **Francesca Torti**<sup>3</sup>* and **Gianluca Morelli**<sup>1</sup>*
+**Marco Riani**<sup>1</sup>*, **Anthony C. Atkinson**<sup>2</sup>, **Aldo Corbellini**<sup>1</sup>* , **Domenico Perrotta**<sup>3</sup>*, **Francesca Torti**<sup>3</sup>* and **Gianluca Morelli**<sup>1</sup>
 
 <sup>1</sup> Department of Economics and Management and Interdepartmental Research Centre for Robust Statistics
 
@@ -11,7 +11,7 @@
 
 <table>
   <tr>
-    <td><img src="brush2.jpg" width="1024" height="1463"></td>
+    <td><img src="brush2.jpg" width="1024" height="392"></td>
   </tr>
 </table>
 
