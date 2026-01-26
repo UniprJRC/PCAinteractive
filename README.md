@@ -36,12 +36,7 @@ showing how interactive graphics reveal latent structure, geographical
 patterns, and atypical observations that are difficult to detect using
 static plots alone. The paper demonstrates how modern interactive
 visualization substantially enhances the interpretability and robustness
-of PCA analyses. We provide a publicly available and fully documented
-interactive program for our procedure which is a robust form of
-Tibshirani's AVAS that allows many forms of robust regression. We
-illustrate the efficacy of our procedure through data analyses. A
-refinement of the backfitting algorithm has interesting implications for
-robust model selection.
+of PCA analyses. 
 
 
 ---
