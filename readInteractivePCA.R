@@ -6,34 +6,34 @@
 
 
 
-# packge sf will manage the geojson file
+# package sf will manage the GeoJSON file
 library(sf)
 library(ggplot2)
 
 # 2. Read the GeoJSON file
-my_map_data <- st_read("citiesItaly2024.geojson")
+mapdata <- st_read("citiesItaly2024.geojson")
 
-# helper: select columns (keeping sf), then drop geometry -> data.frame
-select_drop_geom <- function(sf_obj, cols) {
+# helper function: select columns (keeping sf), then drop geometry -> data.frame
+selectdropgeom <- function(sf_obj, cols) {
   st_drop_geometry(sf_obj[, cols, drop = FALSE])
 }
 
 # 1. Select the 12 economic variables
-economic_cols <- c(
+economicvars <- c(
   "Deposit", "Bankrup", "UrbanFra", "Paym30D", "ElecPar", "QualLif",
   "Protest", "SalaryA", "SpendingA", "Employm", "AddedVa", "LowISEE"
 )
-Xeco <- select_drop_geom(my_map_data, economic_cols)
+Xeco <- selectdropgeom(mapdata, economicvars)
 
 # 2. Select the Latitude and Longitude variables
-lat_long_cols <- c("Lati", "Longi")
-XLatLong <- select_drop_geom(my_map_data, lat_long_cols)
+latlongvars <- c("Lati", "Longi")
+XLatLong <- selectdropgeom(mapdata, latlongvars)
 
 # 3. Select the geographic variables
-geographic_cols <- c(
+geographicvars <- c(
   "COD_RIP", "COD_REG", "COD_PROV", "COD_CM", "COD_UTS",
   "DEN_PROV", "DEN_CM", "DEN_UTS", "SIGLA", "TIPO_UTS",
   "Shape_Leng", "Shape_Area"
 )
-Xgeo <- select_drop_geom(my_map_data, geographic_cols)
+Xgeo <- selectdropgeom(mapdata, geographicvars)
 
