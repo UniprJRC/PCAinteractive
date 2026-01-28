@@ -61,7 +61,17 @@ To view the .ipynb files click on the corresponding link.
 To run the .ipynb files inside the agnostic environment jupiter notebook follow the instructions in the file
 [ipynbRunInstructions.md](https://github.com/UniprJRC/MonitoringBook/blob/main/ipynbRunInstructions.md). 
 
-Note: in order to run the files below you need to have [FSDA toolbox](https://https://www.mathworks.com/matlabcentral/fileexchange/72999-fsda-flexible-statistics-data-analysis-toolbox) installed. In order to visualize the maps the geomapping toolbox is also needed.
+Note: in order to run the files below you need to have [FSDA toolbox](https://https://www.mathworks.com/matlabcentral/fileexchange/72999-fsda-flexible-statistics-data-analysis-toolbox) installed. File `citiesItaly2024` is inside the FSDA toolbox. In order to visualize the maps the geomapping toolbox is also needed.
+Finally, for those who wish to have all the data in their own software a GeoJSON file named `citiesItaly2024.geojson` has been added to the repo.
+This file contains both the variables which have been used for PCA and  the shape contours of the provinces and their latitude and longitude. 
+For R users we have also added a file named `readInteractivePCA.R`  which reads the GeoJSON file and produces in R format the 3 variables (data frames): 
+- Xeco the dataset which contains the 12 quality of life variables  for the Italian provinces; 
+- XLatLong the dataset which contains the latitude and longitude of the provinces;
+- Xgeo the dataset which contains the geographic variables of the provinces. 
+
+
+
+
 <!--
 <style>
 table th:first-of-type {
