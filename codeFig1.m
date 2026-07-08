@@ -26,6 +26,7 @@ catch
     disp('FSDA version is too old, remove current version and install the latest version')
     error('FSDA:FileNotFound','FSDA appears to be present but dataset citiesItaly2024 is not found')
 end
+
 %% 
 % 
 % 
@@ -38,4 +39,9 @@ end
 %% Figure 1
 typespm = struct;
 typespm.upper = 'circle';
-spmplot(citiesItaly2024,'order','AOE','typespm',typespm,'colorBackground',true);
+[H,AX,BigAx] = spmplot(citiesItaly2024,'order','AOE','typespm',typespm,'colorBackground',true,'colorBlindSafe',true);
+
+%{  
+    % This would produce the plot with the default Rcolor style
+    [H,AX,BigAx] = spmplot(citiesItaly2024,'order','AOE','typespm',typespm,'colorBackground',true);
+%}
