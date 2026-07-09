@@ -14,11 +14,9 @@ Longitude=LatLong(:,2);
 
 out = pcaFS(citiesItaly2024,'Latitude',Latitude,'Longitude',Longitude,'colorBlindSafe',true);
 
-out = pcaFS(citiesItaly2024,'smartEVchart',true,'colorBlindSafe',true);
 
 %{
-out = pcaFS(citiesItaly2024,'Latitude',Latitude,'Longitude',Longitude,'colorBlindSafe',false);
 
-out = pcaFS(citiesItaly2024,'smartEVchart',true,'colorBlindSafe',false);
+out = pcaFS(citiesItaly2024,'Latitude',Latitude,'Longitude',Longitude,'colorBlindSafe',false);
 
 %}
