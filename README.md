@@ -41,6 +41,28 @@ of PCA analyses.
 
 ---
 
+## Requirements
+
+- **MATLAB** R2025b or later.
+
+- **MathWorks toolboxes**:                  
+    - Mapping Toolbox                        
+    - Image Processing Toolbox             
+    - Statistics and Machine Learning Toolbox
+    - Parallel Computing Toolbox            
+    - Text Analytics Toolbox                
+- **FSDA toolbox**, version `8.7.11.0` or later.
+  <!-- TODO: pin the exact FSDA release used for the paper -->
+  Install it in one of the following ways:
+  - from the MATLAB Add-On Explorer (search for "FSDA");
+  - from the [MathWorks File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/72999-fsda);
+  - from [GitHub](https://github.com/UniprJRC/FSDA).
+
+No commercial license is required to run the material on MATLAB Online, all the required MathWorks toolboxes are already present, what is needed is the creation of a free account: clicking the **Open in MATLAB Online** badge above runs everything in the browser using the free online version of MATLAB.
+
+## How to reproduce the results
+The interactive features described in the paper (brushing, linking, dynamic updating of the plots) require a MATLAB desktop or MATLAB Online session; they are not available when the code is executed in batch mode.
+
 In the table below you can find  the original source (MATLAB script): .m file and the corresponding .ipynb file. 
 
 **MATLAB script files**
@@ -56,7 +78,7 @@ To view the .ipynb files click on the corresponding link.
 To run the .ipynb files inside the agnostic environment Jupyter notebook follow the instructions in the file
 [ipynbRunInstructions.md](https://github.com/UniprJRC/MonitoringBook/blob/main/ipynbRunInstructions.md). 
 
-Note: in order to run the files below you need to have [FSDA toolbox](https://https://www.mathworks.com/matlabcentral/fileexchange/72999-fsda-flexible-statistics-data-analysis-toolbox) installed. File `citiesItaly2024` is inside the FSDA toolbox. In order to visualize the maps the geomapping toolbox is also needed.
+**Note: in order to run the files below you need to have [FSDA toolbox](https://https://www.mathworks.com/matlabcentral/fileexchange/72999-fsda-flexible-statistics-data-analysis-toolbox) installed.** File `citiesItaly2024` is inside the FSDA toolbox. In order to visualize the maps the geomapping toolbox is also needed.
 Finally, for those who wish to have all the data in their own software a GeoJSON file named `citiesItaly2024.geojson` has been added to the repo. Clicking on this file on GitHub will render the map with the countours of 107 provinces of Italy. 
 This file contains both the variables which have been used for PCA and  the shape contours of the provinces and their latitude and longitude. 
 For R users we have also added a file named `readInteractivePCA.R`  which reads the GeoJSON file and produces in R format the 3 variables (data frames): 
