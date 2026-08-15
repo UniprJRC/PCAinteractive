@@ -11,7 +11,7 @@ library(sf)
 library(ggplot2)
 
 # 2. Read the GeoJSON file
-mapdata <- st_read("citiesItaly2024.geojson")
+mapdata <- st_read(file.path("data", "citiesItaly2024.geojson"))
 
 # helper function: select columns (keeping sf), then drop geometry -> data.frame
 selectdropgeom <- function(sf_obj, cols) {
