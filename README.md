@@ -60,11 +60,11 @@ of PCA analyses.
 No commercial license is required to run the material on MATLAB Online, all the required MathWorks toolboxes are already present, what is needed is the creation of a free account: clicking the **Open in MATLAB Online** badge below runs everything in the browser using the free version of MATLAB Online.
 
 ## How to reproduce the results
-Run the file [replication.m](https://github.com/UniprJRC/PCAinteractive/blob/main/replication.m) that will recreate all the anaysis an pictures of the paper.
+Run the file [`replication.m`](https://github.com/UniprJRC/PCAinteractive/blob/main/replication.m), which reproduces the analyses and launches the graphical displays used in the paper.
 
 The interactive features described in the paper (brushing, linking, dynamic updating of the plots) require a MATLAB desktop or MATLAB Online session; they are not available when the code is executed in batch mode.
 
-
+The `extra/` directory contains the earlier figure-specific scripts and notebooks, retained only as optional teaching and inspection material.
 
 
 ![GitHub top language](https://img.shields.io/github/languages/top/UniprJRC/PCAinteractive)
